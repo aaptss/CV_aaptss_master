@@ -1,0 +1,272 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Arman Petrosyants} \\ \vspace{1pt}
+    \small +7-985-985-87-05 $|$ \href{mailto:armanpts@outlook.com}{\underline{armanpts@outlook.com}} $|$ 
+    \href{https://linkedin.com/in/aaptss}{\underline{linkedin.com/in/aaptss}} $|$
+    \href{https://github.com/aaptss}{\underline{github.com/aaptss}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bauman Moscow State Technical University}{Moscow, Russia}
+      {M.Sc. in Medical Instrumentation, Technologies and Biomedical Engineering}{Sep 2018 -- Aug 2020}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: An Electrical Impedance Tomography System:}\\
+                {—— Researched image reconstruction algorithms for an EIT system.}\\
+                {—— Applied image reconstruction algorithms for a non-full circle electrode array.}\\
+                {—— Developed \textit{in silico} data generation pipeline for hypotheses verification.}\\
+                {—— Developed MATLAB code to implement several reconstruction algorithms.}
+            }}
+      \end{itemize}
+
+    \resumeSubheading
+      {Bauman Moscow State Technical University}{Moscow, Russia}
+      {B.Sc. in Medical Instrumentation, Technologies and Biomedical Engineering}{Sep 2014 -- Aug 2018}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: Electromyography and Kinematic Sensor-based Arm Prosthesis:}\\
+                {—— Researched the optimal EMG channels number for prosthetic arm control.}\\
+                {—— Researched the optimal refresh rate of gyroscopes and accelerometers for prosthetic arm control.}\\
+                {—— Formulated general theoretical outlines for arm prosthetic development.}\\
+                {—— Developed clinical-grade EMG biosensor with built-in (hardware) envelope of the said signal.}\\
+                {—— Developed a close-loop tactile feedback system:}\\
+                {——— with haptic motors;}\\
+                {——— with Ni-Cu alloy based resistance-pressure sensor.}
+            }}
+      \end{itemize} 
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tsuru Robotics}{Moscow, Russia}
+      {Junior Research \& Development Engineer}{Jun 2020 -- Present}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Developed real-time (40 us) UWB-based Positioning System:}\\
+                {—— Developed architecture capable of positioning an infinite amount of devices in the scope of one system.}\\
+                {—— Implemented data analysis pipeline in MATLAB for system refinement.}\\
+                {——— Mitigated positioning error from over 5m to sub-30cm precision of detection.}\\
+                {— Participated in the Drone Show preparation:}\\
+                {—— Assembled, tested and deployed 3 power supplies for LED arrays and arrays themselves.}\\
+                {—— Assisted in MoCap-based system development of tracking the correctness of an aim in the shooting range.}\\
+                {——— The main assumption: an aim has external coordinates (GPS/UWB), the gun has only MoCap-based coordinates.}
+            }}
+      \end{itemize}
+    \resumeSubSubheading
+    {Embedded Systems Intern}{Mar 2020 -- Jun 2020}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Developed real-time (100 us) Time-of-Arrival based Positioning system with Cortex-M4 chip:}\\
+                {—— Coded Firmware with C language to enable the system.}\\
+                {—— UART/Segger RTT for debugging and logging.}\\
+                {— Researched said Positioning system's parameters and error margins.}\\
+                {—— MATLAB as a main tool of gathered data analysis.}
+            }}
+      \end{itemize}
+    \resumeSubHeadingListEnd
+
+    \resumeSubheading
+      {GE Healthcare, MRI dep-t}{Moscow, Russia}
+      {Sales \& Technical Marketing Intern}{Jan 2019 -- Dec 2019}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: An Electrical Impedance Tomography System:}\\
+                {—— Researched image reconstruction algorithms for an EIT system.}\\
+                {—— Applied image reconstruction algorithms for a non-full circle electrode array.}\\
+                {—— Developed \textit{in silico} data generation pipeline for hypotheses verification.}\\
+                {—— Developed MATLAB code to implement several reconstruction algorithms.}
+            }}
+      \end{itemize}
+
+    \resumeSubheading
+      {Huawei Labs, Sensors \& Algorithms Team}{Moscow, Russia}
+      {Research \& Development Intern}{Jul 2018 -- Sep 2018}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: An Electrical Impedance Tomography System:}\\
+                {—— Researched image reconstruction algorithms for an EIT system.}\\
+                {—— Applied image reconstruction algorithms for a non-full circle electrode array.}\\
+                {—— Developed \textit{in silico} data generation pipeline for hypotheses verification.}\\
+                {—— Developed MATLAB code to implement several reconstruction algorithms.}
+            }}
+      \end{itemize}
+
+    \resumeSubheading
+      {Motorica}{Moscow, Russia}
+      {Embedded Systems Intern}{Oct 2016 -- Jan 2018}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: An Electrical Impedance Tomography System:}\\
+                {—— Researched image reconstruction algorithms for an EIT system.}\\
+                {—— Applied image reconstruction algorithms for a non-full circle electrode array.}\\
+                {—— Developed \textit{in silico} data generation pipeline for hypotheses verification.}\\
+                {—— Developed MATLAB code to implement several reconstruction algorithms.}
+            }}
+      \end{itemize}
+      
+    \resumeSubheading
+      {Bauman MSTU, Biomed Engineering dep-t}{Moscow, Russia}
+      {Research \& Lab Assistant}{Oct 2015 -- Feb 2017}
+      \begin{itemize}[leftmargin=0in, label={}]
+            \small{\item{
+                {— Graduated with Honors, 4.8/5.0 GPA (max 5.0).}\\
+                {— Thesis: An Electrical Impedance Tomography System:}\\
+                {—— Researched image reconstruction algorithms for an EIT system.}\\
+                {—— Applied image reconstruction algorithms for a non-full circle electrode array.}\\
+                {—— Developed \textit{in silico} data generation pipeline for hypotheses verification.}\\
+                {—— Developed MATLAB code to implement several reconstruction algorithms.}
+            }}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACADEMIC AWARDS, PUBLICATIONS AND CONFERENCE PARTICIPATION-----------
+\section{Academic Awards, Publications and Conferences}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
