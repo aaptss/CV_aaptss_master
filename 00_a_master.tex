@@ -14,6 +14,8 @@
 \usepackage{array}
 \input{glyphtounicode}
 
+%\newcommand{\DesPosition}{\(\cdot\) }
+\newcommand{\DesPosition}{}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -101,7 +103,7 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Arman Petrosyants} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Arman Petrosyants \DesPosition } \\ \vspace{1pt}
     \small +7-123-456-78-90$|$ \href{mailto:armanpts@outlook.com}{\underline{armanpts@outlook.com}} $|$ 
     \href{https://linkedin.com/in/aaptss}{\underline{linkedin.com/in/aaptss}} $|$
     \href{https://github.com/aaptss}{\underline{github.com/aaptss}}
@@ -110,64 +112,65 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-	\input{0msc}
-	\input{0bsc}
+%	\input{0phdbmstu}
+
+	\input{0mscbmstu}
+	\input{0mscThesis}
+
+	\input{0bscbmstu}
+	\input{0bscThesis}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+	\input{5tsuru}
+	\input{3huawei}
+  	\input{1sintezbelok}
+  \resumeSubHeadingListEnd
+
 \section{Work Experience}
   \resumeSubHeadingListStart
-
-	\input{5tsuru}
 	\input{4gehc}
-\newpage
-	\input{3huawei}
  	\input{2motorica} 
-  	\input{1sintezbelok}
+
   \resumeSubHeadingListEnd
 
 
 %-----------ACADEMIC AWARDS, PUBLICATIONS AND CONFERENCE PARTICIPATION-----------
-\section{Academic Awards, Publications and Conferences}
+\section{Publications and Conference Patricipations}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Electrical Impedance Tomography Data Acquisition Emulation} $\ $\\
-          \emph{\textbf{A. Petrosyants}, A. Volkov, A. Nikolaev}}{\ }
-      \begin{itemize}[leftmargin=0in, label={}]
-            \small{\item{
-                 {2020 Ural Symposium on Biomedical Engineering, Radioelectronics and Information Technology (USBEREIT)}\\
-                 {Yekaterinburg, Russia}\\
-                 {\href{https://ieeexplore.ieee.org/abstract/document/9117667/}{\underline{doi: 10.1109/USBEREIT48449.2020.9117667}}}
-            }}
-      \end{itemize}
-      
+	{\textbf{A. Petrosyants}, A. Volkov, A. Nikolaev. \textit{Electrical Impedance Tomography Data Acquisition Emulation}.}{$|$ \textit{Conf P}}
+	      \begin{itemize}[leftmargin=0in, label={}]
+	            \small{\item{
+	                 {Ural Symposium on Biomedical Engineering, Radioelectronics and Information Technology (USBEREIT), \\ 
+			Yekaterinburg, Russia, 2020, pp. 44-47.}
+	                 {\href{https://ieeexplore.ieee.org/abstract/document/9117667/}{\underline{doi: 10.1109/USBEREIT48449.2020.9117667}}}
+	            }}
+	      \end{itemize}
+
       \resumeProjectHeading
-          {\textbf{Theoretical Bases of Ultrasonic Phaco-operation} $\ $\\
-          \emph{Yu. Ershov, V. Akopyan, S. Alkov, \textbf{A. Petrosyants}}}{\ }
-      \begin{itemize}[leftmargin=0in, label={}]
-            \small{\item{
-                  {J Tech Living Sys № 1 2017. \href{https://www.elibrary.ru/item.asp?id=29715174}{\underline{ISSN: 2070-0997}}}
-            }}
-      \end{itemize}
-      
-      \resumeProjectHeading
-          {\textbf{Academic Council Scholarship} $|$ \emph{BMSTU}}{Jan 2018 -- Aug 2018}
-      \resumeProjectHeading
-          {\textbf{Russian President Scholarship} $|$ \emph{BMSTU}}{Jan 2017 -- Jan 2018}
-      \resumeProjectHeading
-          {\textbf{Russian Government Scholarship} $|$ \emph{BMSTU}}{Sep 2016 -- Sep 2017}
+	{Yu. Ershov, V. Akopyan, S. Alkov, \textbf{A. Petrosyants}. \textit{Theoretical Bases of Ultrasonic Phaco-Operation}.}{$|$ \textit{J Publ}}
+	      \begin{itemize}[leftmargin=0in, label={}]
+	            \small{\item{ 
+	                  {J Tech Living Sys, Tome 14, No.1 2017. pp. 36-39. \href{https://www.elibrary.ru/item.asp?id=29715174}{\underline{ISSN: 2070-0997}}}
+	            }}
+	      \end{itemize}
     \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
+\section{Academic Awars}
+    \resumeSubHeadingListStart      
+      \resumeProjectHeading
+          {\textbf{Academic Council Scholarship} $|$ {For an Outstanding Academic and Research Performance}}{\emph{Jan 2018 -- Aug 2018}}\\
+      \resumeProjectHeading
+          {\textbf{Russian President Scholarship} $|$ {For an Excellent Academic and Research Performace}}{\emph{Jan 2017 -- Jan 2018}}\\
+      \resumeProjectHeading
+          {\textbf{Russian Gov-t's Scholarship} $\> \> \> \> \> |$ {For an Extracurricular Scholar Performance}}{\emph{Sep 2016 -- Sep 2017}}
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
 \section{Technical Skills and Interests}
-%  \begin{itemize}[leftmargin=0.15in, label={}]
-%     \small{\item{
-%      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-%      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-%      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
-%     }}
-%  \end{itemize}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
 \begin{tabularx}{1.0\textwidth} { 
