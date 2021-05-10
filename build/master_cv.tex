@@ -96,6 +96,7 @@
 %-------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\newcommand{\DesPosition}{\(\cdot\) Research Engineer}
 \newcommand{\DesPosition}{ }
 
 \begin{document}
@@ -114,6 +115,7 @@
 	\input{../academic/02_msc_ed}
 	\input{../academic/01_bsc_ed}
   \resumeSubHeadingListEnd
+  \input{../academic/awards}
 
 \section{Work Experience}
   \resumeSubHeadingListStart
@@ -121,59 +123,25 @@
 	\input{../research/msc_Thesis}
  	\input{../work/04_gehc_reduced} 
 	\input{../work/03_huawei}
+
+  \newpage
+
 	\input{../research/bsc_Thesis}
  	\input{../work/02_motorica_reduced}
   \input{../research/01_res_sintezbelok_reduced} 
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS AND CONFERENCE PARTICIPATION-----------
-\section{Publications and Conference Patricipations}
 \input{../academic/99_publications}
 
 %-----------SKILLS-----------
-\section{Technical Skills \& Literacy}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
-\begin{tabularx}{1.0\textwidth} { 
-   X L R R}
-$\> \> \>$    MATLAB	            & Embedded C\     & Electrosphysiology    & COMSOL		\\
-$\> \> \>$	  Linux bash	      & SPI/UART        & iEMG / sEMG           & Proteus	      \\
-$\> \> \>$	  Python 			& Firmware Design & EIT / ICG             & \LaTeX         	\\
-$\> \> \>$    git 			& nRF52           & Bioelectricity        & ROS2            \\
-\end{tabularx}
+\input{../misc/skills}
 
 %-----------LANGUAGES-----------
-\section{Languages}
-\resumeSubHeadingListStart      
-\resumeProjectHeading
-    {\textbf{English} $\> \> \> \> \>  |$ {C1-C2 proficiency. Freely operating CS, DS and BME scientific papers}}{}\\
-\resumeProjectHeading
-    {\textbf{Russian} $\> \> \> \> |$ {Native speaker}}{}\\
-\resumeProjectHeading
-    {\textbf{Armenian}$\> |$ {Native speaker}}{}\\
-\resumeProjectHeading
-    {\textbf{Chinese} $\> \> \> \> |$ {A2 proficiency. Previously B1-B2, now degrated due to lack of use}}{}\\
-\resumeProjectHeading
-    {\textbf{German}  $\> \> \> |$ {A1-A2 proficiency. Beginner level}}{}\\
-\resumeSubHeadingListEnd
+\input{../misc/spoken_langs}
 
 %-----------OTHER ACTIVITIES-----------
-\section{Side Projects}
-\resumeSubHeadingListStart
-      
-      \resumeProjectHeading
-      {\textbf{Vocal and Guitar}{: Developing musical skills not to be ashamed of myself at karaoke}}{\emph{Dec 2019 -- Present}} \\
-      
-      \resumeProjectHeading
-      {\textbf{Maths Tutor}{: preparing school students for olympiads participation and state grad exams}}{\emph{Nov 2016 -- Jun 2020}} \\
-      
-      \resumeProjectHeading
-      {\textbf{Admin at \href{https://vk.com/alpha_dogs}{\underline{alphadog}}}{: a public page devoted mainly to Tech, TV-series and Videogames}}{\emph{Feb 2015 -- Aug 2016}} \\
-      
-      \resumeProjectHeading
-      {\textbf{ROS2 Path Planner \href{https://github.com/aaptss/route_planning_ros2}{\underline{Package}}}{: Developed ROS2 package to plan a path with RRT(rapidly expanding tree) algo. }}\\
-
-\resumeSubHeadingListEnd
+\input{../misc/sidegigs}
 
 %-------------------------------------------
 \end{document}
