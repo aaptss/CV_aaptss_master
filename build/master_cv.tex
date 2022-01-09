@@ -12,6 +12,9 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{courier}
+\usepackage{tabto}
+\usepackage{ragged2e}
 \input{glyphtounicode}
 
 
@@ -97,42 +100,52 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\newcommand{\DesPosition}{\(\cdot\) Research Engineer}
-\newcommand{\DesPosition}{ }
+\newcommand{\DesPosition}{}
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Arman Petrosyants \DesPosition } \\ \vspace{5pt}
+    \textbf{\Huge \scshape \(\cdot\) Arman Petrosyants \(\cdot\) \DesPosition } \\ \vspace{5pt}
     \href{mailto:armanpts@outlook.com}{\underline{armanpts@outlook.com}} $|$ 
     \href{https://linkedin.com/in/aaptss}{\underline{linkedin.com/in/aaptss}} $|$
-    \href{https://github.com/aaptss}{\underline{github.com/aaptss}}
+    \href{https://github.com/aaptss}{\underline{github.com/aaptss}}\newline
+
+\justifying{ 
+Arman is a tech savvy engineer and a Ph.D. student. He is proficient in domains of body sensors, data analysis and modelling; and wields systematic approach to tackle problems. In a spare time, he enjoys reading fantasy and sci-fi, playing videogames and unleashing his inner musician.
+}
 \end{center}
+
+
+%-----------WORK-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+	\input{../work/07_tsuru}
+	\input{../work/06_msc_Thesis_reduced}
+  	\input{../work/05_gehc_reduced} 
+%   	\input{../work/05_gehc} 
+	\input{../work/04_huawei_reduced}
+% 	\input{../work/04_huawei}
+	\input{../work/03_bsc_Thesis}
+ 	\input{../work/02_motorica_reduced}
+%  	\input{../work/02_motorica}
+    \input{../work/01_sintezbelok_reduced} 
+    % \input{../work/01_sintezbelok} 
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-	\input{../academic/02_msc_ed}
-	\input{../academic/01_bsc_ed}
+	\input{../academic/03_phd_ed}
+	\input{../academic/00_bmstu_integrated}
+% 	\input{../academic/02_msc_ed}
+% 	\input{../academic/01_bsc_ed}
   \resumeSubHeadingListEnd
-  \input{../academic/awards}
-
-\section{Work Experience}
-  \resumeSubHeadingListStart
-	\input{../work/05_tsuru}
-	\input{../research/msc_Thesis}
- 	\input{../work/04_gehc_reduced} 
-	\input{../work/03_huawei}
-
-  \newpage
-
-	\input{../research/bsc_Thesis}
- 	\input{../work/02_motorica_reduced}
-  \input{../research/01_res_sintezbelok_reduced} 
-  \resumeSubHeadingListEnd
+%   \input{../academic/awards}
 
 %-----------PUBLICATIONS AND CONFERENCE PARTICIPATION-----------
 \input{../academic/99_publications}
+% \input{../academic/99_sel_pubs}
 
 %-----------SKILLS-----------
 \input{../misc/skills}

@@ -1,13 +1,53 @@
-\section{Technical Skills \& Literacy}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
-\begin{tabularx}{1.0\textwidth} { X L L R }
-% $\> \> \>$    MATLAB	         & Wavelet analysis       & Data visualization       & COMSOL    \\
-% $\> \> \>$	  bash	         & Kalman Filter          & Data analysis            & Proteus   \\
-% $\> \> \>$	  Python 			& Stochastic Models      & MAVLink                  & \LaTeX    \\
-% $\> \> \>$    git 			   & Diff. equations        & Sensory data processing  & ROS2      \\
+\NumTabs{2}
+\newcommand{\resumeSkillSet}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 \hspace{4mm} #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSkillSetListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSkillSetListEnd}{\end{itemize}}
 
-$\> \> \>$    MATLAB	            & Python             & bash                     & git    \\
-$\> \> \>$	  Stochastic Models  & Kalman Filter      & Data analysis            & Data visualization    \\
-$\> \> \>$	  OpenCV 			   & ROS2               & Sensory Data processing  & \LaTeX 
-\end{tabularx}
+\section{Technical Skills \& Literacy}
+\resumeSkillSetListStart      
+\resumeSkillSet
+    {\texttt{\textbf{Languages\ \ \ \ }}}
+    {\texttt{python}, \texttt{MATLAB}, Bare-metal \texttt{C} (Cortex-M4), \texttt{Mathematica}}\\
+\resumeSkillSet
+    {\texttt{\textbf{Familiarity\ \ }}}
+    {\texttt{bash}, \texttt{fish}, \texttt{git}, \texttt{C++} basics, CUDA, ROS/ROS2}\\
+\resumeSkillSet
+    {\texttt{\textbf{Data Analysis}}}
+    {EDA (python libraries: \texttt{pd}, \texttt{np}, \texttt{plt}, \texttt{sns}, \texttt{numba}), some classic ML techniques}\\
+\resumeSkillSet
+    {\texttt{\textbf{Knowledge\ \ \ \ }}}
+    {Bioelectricity, Body Sensors, Linear Algebra, Algorithms, Optimization (GMRES, MINRES)}\\
+\resumeSkillSet
+    {\texttt{\textbf{CAD Software\ }}}
+    {Autodesk Inventor, SolidWorks, Altium Designer, MicroCap, Proteus, Simulink, COMSOL}\\
+\resumeSkillSetListEnd
+
+% Languages:
+%  pyhton: np, pd, plt, sns, numba
+%  MATLAB 
+%  Bare-metal C (Cortex-M4)
+%  Wolfram Mathematica
+
+% Familiarity: 
+%  C++ Basics 
+%  CUDA, ROS2 
+%  bash, fish, git
+
+% Data processing:
+%  Explorative data analysis
+%  Some classic ML techniques
+ 
+% Theoretical prowess:
+%  Bioelectricity & Body sensors 
+%  Linear Algebra
+%  Algorithms, GMRES, MINRES, QR
+
+% CAD software: 
+%  Auntodesk Inventor, SolidWorks
+%  Altium Designer, MicroCap, Proteus
+%  Simulink, COMSOL
